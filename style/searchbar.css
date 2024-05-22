@@ -1,0 +1,205 @@
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; /* Ensure the video is behind other content */
+}
+
+body {
+  /* font-family: Arial, sans-serif; */
+  text-align: center;
+  position: relative; /* Ensure other elements position relative to body */
+  z-index: 1; /* Set a higher z-index for other content to appear on top of the video */
+}
+
+.flowerIcon {
+  width: 50px; /* Adjust the size as needed */
+  vertical-align: middle; /* Aligns the icon vertically with the text */
+  margin-right: 10px; /* Spacing between the icon and the text */
+  margin-left: 10px; /* Spacing between the text and the icon */
+}
+
+
+h1 {
+  margin-top: 20px;
+  color: white;
+  font-size:120px;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    
+  
+}
+
+h2 {
+  color: white;
+
+}
+
+h3 {
+  margin-top: 20px;
+  color: white;
+  font-size:80px;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+}
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+ body{
+  font-family: "Nunito",sans-serif;
+  background: #44576D;
+}
+
+
+ .input{
+  text-align: center;
+  margin: 50px auto 20px; /* Adjusted top margin from 100px to 50px */
+}
+
+
+ input[type="submit"]{
+  padding: 15px 30px;
+  color: #29353C;
+  background: #AAC7D8;
+  border: none;
+  border-radius: 50px;
+  font-family: "Nunito",sans-serif;
+  font-weight:bold;
+  font-size: 20px;
+}
+
+
+ .input input[type="text"]{
+  width: 600px;
+  height: 55px;
+  padding: 5px 30px;
+  color: #29353C;
+  background: #AAC7D8;
+  border: none;
+  border-radius: 50px;
+  font-family: "Nunito",sans-serif;
+  font-weight:bold;
+  font-size: 20px;
+}
+
+.input_text::placeholder {
+  color: #29353C;
+}
+
+
+
+ .card{
+  width: 50%;
+  background: #AAC7D8;
+  height: 40vh;
+  margin: 30px auto;
+  margin-top: 10;
+  border-radius: 50px;
+}
+
+
+.close{
+  float: right;
+  margin-top: -2px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+
+ .card h1{
+  padding: 5px 0;
+  text-align: center;
+}
+
+
+ .card p{
+  text-align: center;
+  margin:40px 0;
+  font-size:30px;
+  font-weight: bold;
+  font-family: "Nunito",sans-serif;
+  color: #29353C;
+}
+
+.arrow {
+  
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+
+.findButton {
+  padding: 15px 30px;
+  color: #29353C;
+  background: #AAC7D8;
+  border: none;
+  border-radius: 1px;
+  font-family: "Nunito",sans-serif;
+  font-weight:bold;
+  font-size: 30px;
+  border-radius: 50px;
+
+}
+
+.tops {
+  margin-top: 20px;
+  color: white;
+  font-size:80px;
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+}
+
+.bottoms {
+  margin-top: 20px;
+  color: white;
+  font-size:80px;
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+}
+
+.shoes {
+  margin-top: 20px;
+  color: white;
+  font-size:80px;
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+}
+
+.accessories {
+  margin-top: 20px;
+  color: white;
+  font-size:80px;
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+}
+
+.rec {
+  margin-top: 20px;
+  color: white;
+  font-size:80px;
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+}
+
+.ref{
+  padding: 15px 30px;
+  color: #29353C;
+  background: #AAC7D8;
+  border: none;
+  border-radius: 50px;
+  font-family: "Nunito",sans-serif;
+  font-weight:bold;
+  font-size: 20px;
+}
