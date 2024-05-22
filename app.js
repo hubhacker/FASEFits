@@ -10,6 +10,10 @@ var desc = document.querySelector('.desc');
 var clouds = document.querySelector('.clouds');
 var button = document.querySelector('.submit');
 
+// Get theme from the URL parameters?
+const urlParams = new URLSearchParams(window.location.search);
+const theme = urlParams.get('theme');
+
 //enter button commands
 button.addEventListener('click', function (name) {
   fetchData();
