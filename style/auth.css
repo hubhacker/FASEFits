@@ -1,12 +1,12 @@
 body {
     text-align: center;
     font-family: 'Nunito', sans-serif;
-    background-color: #ffe4e1; /* Light pink background */
+    background-color: #ffe4e1;
     margin: 0;
     padding: 0;
 }
 
-.login-body {
+.auth-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,25 +16,52 @@ body {
 
 h1 {
     font-size: 60px;
-    color: #ff69b4; /* Hot pink text */
+    color: #ff69b4; 
     margin-bottom: 30px;
 }
 
-.login-container {
+.auth-container {
     background-color: #fff;
     padding: 20px 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
 }
 
-h2 {
-    color: #ff69b4;
-    margin-bottom: 20px;
-}
-
-form {
+.auth-tabs {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+}
+
+.auth-tabs button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: #ff69b4;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-tabs button.active {
+    background-color: #ff1493;
+}
+
+.auth-tabs button:hover {
+    background-color: #ff1493;
+}
+
+.form {
+    display: none;
+    margin-top: 20px;
+}
+
+.form.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
 }
 
 input[type="text"], input[type="password"] {
@@ -43,6 +70,7 @@ input[type="text"], input[type="password"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    width: 100%;
 }
 
 button {
@@ -54,10 +82,11 @@ button {
     cursor: pointer;
     font-size: 18px;
     transition: background-color 0.3s;
+    width: 100%;
 }
 
 button:hover {
-    background-color: #ff1493; /* Deep pink when hovered */
+    background-color: #ff1493;
 }
 
 .error-message {

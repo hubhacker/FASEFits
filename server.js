@@ -13,7 +13,7 @@ app.use(session({
     saveUninitialized: true,
 }));
 
-// Sample user data
+// Sample user data 
 const users = {
     user1: 'password1',
     user2: 'password2'
@@ -30,11 +30,23 @@ app.post('/login', (req, res) => {
     }
 });
 
+app.post('/signup', (req, res) => {
+    const { username, password } = req.body;
+
+    if (users[username]) {
+        res.json({ success: false, message: 'Username already taken' });
+    } else {
+        users[username] = password;
+        req.session.user = username;
+        res.json({ success: true });
+    }
+});
+
 app.get('/', (req, res) => {
     if (req.session.user) {
         res.redirect('/themeChoice.html');
     } else {
-        res.redirect('/login.html');
+        res.redirect('/auth.html');
     }
 });
 

@@ -4,21 +4,21 @@
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  z-index: -1; /* Ensure the video is behind other content */
+  z-index: -1; 
 }
 
 body {
-  /* font-family: Arial, sans-serif; */
+
   text-align: center;
-  position: relative; /* Ensure other elements position relative to body */
-  z-index: 1; /* Set a higher z-index for other content to appear on top of the video */
+  position: relative; 
+  z-index: 1; 
 }
 
 .flowerIcon {
-  width: 50px; /* Adjust the size as needed */
-  vertical-align: middle; /* Aligns the icon vertically with the text */
-  margin-right: 10px; /* Spacing between the icon and the text */
-  margin-left: 10px; /* Spacing between the text and the icon */
+  width: 50px; 
+  vertical-align: middle;
+  margin-right: 10px; 
+  margin-left: 10px; 
 }
 
 
@@ -64,7 +64,7 @@ h3 {
 
  .input{
   text-align: center;
-  margin: 50px auto 20px; /* Adjusted top margin from 100px to 50px */
+  margin: 50px auto 20px; 
 }
 
 
