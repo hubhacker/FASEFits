@@ -44,7 +44,7 @@ app.post('/signup', (req, res) => {
 
 app.get('/', (req, res) => {
     if (req.session.user) {
-        res.redirect('/themeChoice.html');
+        res.redirect('/initial.html');
     } else {
         res.redirect('/auth.html');
     }
