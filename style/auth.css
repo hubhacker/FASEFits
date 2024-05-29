@@ -1,95 +1,107 @@
-body {
-    text-align: center;
-    font-family: 'Nunito', sans-serif;
-    background-color: #ffe4e1;
-    margin: 0;
-    padding: 0;
-}
+/* auth.css */
 
-.auth-body {
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #f9a8e5 0%, #fbc2eb 100%);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    text-align: center;
+    color: #fff;
+}
+
+.auth-body {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.flowerIcon {
+    width: 50px; 
+    vertical-align: middle; 
+    margin-right: 10px; 
+    margin-left: 10px; 
 }
 
 h1 {
+    margin-top: 20px;
     font-size: 60px;
-    color: #ff69b4; 
-    margin-bottom: 30px;
+    font-family: "Bungee", cursive;
+    color: #ff69b4;
 }
 
 .auth-container {
-    background-color: #fff;
-    padding: 20px 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    background: #ffffffaa;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 400px;
 }
 
 .auth-tabs {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
 .auth-tabs button {
-    flex: 1;
-    padding: 10px;
+    background: none;
     border: none;
-    background-color: #ff69b4;
-    color: white;
+    font-size: 20px;
+    font-family: "Bungee", cursive;
     cursor: pointer;
-    transition: background-color 0.3s;
+    color: #ff69b4;
+    transition: color 0.3s ease;
 }
 
 .auth-tabs button.active {
-    background-color: #ff1493;
+    border-bottom: 2px solid #ff69b4;
 }
 
 .auth-tabs button:hover {
-    background-color: #ff1493;
+    color: #ff1493;
 }
 
 .form {
     display: none;
-    margin-top: 20px;
 }
 
 .form.active {
     display: block;
 }
 
-.hidden {
-    display: none;
-}
-
-input[type="text"], input[type="password"] {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+form input {
     width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid #ff69b4;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
 }
 
-button {
+form button {
+    width: 100%;
     padding: 10px;
-    background-color: #ff69b4;
-    color: white;
     border: none;
     border-radius: 5px;
+    background: #ff69b4;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Bungee", cursive;
     cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s;
-    width: 100%;
+    transition: background 0.3s ease;
 }
 
-button:hover {
-    background-color: #ff1493;
+form button:hover {
+    background: #ff1493;
 }
 
 .error-message {
-    color: red;
+    color: #ff0000;
     margin-top: 10px;
+    font-size: 16px;
 }

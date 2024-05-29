@@ -4,10 +4,10 @@ function changeTheme(theme) {
 
     switch (theme) {
         case 'test':
-            videoSource = 'testBackground.mp4';
+            videoSource = 'indexBackground.mp4';
             break;
         case 't2':
-            videoSource = 't2Background.mp4';
+            videoSource = 'indexBackground2.mp4';
             break;
         case 't3':
             videoSource = 't3Background.mp4';
