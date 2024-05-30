@@ -1,5 +1,6 @@
 body.kawaii-body {
-  background-color: #FFE3F2;
+  /* background-color: #FFE3F2; */
+  background-image: url(img\FASEFItsinitialBackground.png);
   font-family: 'Nunito', sans-serif;
   color: #FF6F91;
   text-align: center;
