@@ -11,27 +11,33 @@
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body class="kawaii-body">
-  
   <h1><img src="img/indexFlower.png" alt="Flower Icon" class="flowerIcon"> FASE FITS <img src="img/indexFlower.png" alt="Flower Icon" class="flowerIcon"></h1>
-   
-  <h2>Choose Your Theme:</h2>
-  
-  <div class="theme-buttons">
-    <button class="theme-button" onclick="location.href='index.html?theme=test'">test</button>
-    <button class="theme-button" onclick="location.href='index.html?theme=t2'">t2</button>
-    <button class="theme-button" onclick="location.href='index.html?theme=t3'">t3</button>
-    <button class="theme-button" onclick="location.href='index.html?theme=t4'">t4</button>
-  </div>
 
-  <h2>Additional Features</h2>
-  
-  <div class="additional-buttons">
-    <button class="feature-button" onclick="location.href='account.html'">
-      <span class="material-symbols-outlined">account_circle</span> Account Page
-    </button>
-    <button class="feature-button" onclick="location.href='analytics.html'">
-      <span class="material-symbols-outlined">insights</span> User Analytics
-    </button>
+  <div class="container">
+    <div class="left-column">
+      <h2>Choose Your Theme!</h2>
+      <div class="theme-buttons">
+        <button class="theme-button" onclick="location.href='index.html?theme=test'">test</button>
+        <button class="theme-button" onclick="location.href='index.html?theme=t2'">t2</button>
+        <button class="theme-button" onclick="location.href='index.html?theme=t3'">t3</button>
+        <button class="theme-button" onclick="location.href='index.html?theme=t4'">t4</button>
+      </div>
+    </div>
+    
+    <div class="middle-text">
+      <h2>Welcome to FASE FITS</h2>
+      <p>Your personalized outfit recommendation service based on the weather and your preferences.</p>
+    </div>
+    
+    <div class="right-column">
+      <div class="dropdown">
+        <button class="dropbtn">User Information</button>
+        <div class="dropdown-content">
+          <a href="account.html"><span class="material-symbols-outlined">account_circle</span> Account Page</a>
+          <a href="analytics.html"><span class="material-symbols-outlined">insights</span> User Analytics</a>
+        </div>
+      </div>
+    </div>
   </div>
 
 </body>
