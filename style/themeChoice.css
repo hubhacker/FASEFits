@@ -1,18 +1,18 @@
 body.kawaii-body {
-  /* background-color: #FFE3F2; */
-  background-image: url(img\FASEFItsinitialBackground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: 'Nunito', sans-serif;
   color: #FF6F91;
   text-align: center;
-  padding: 20px;
+  padding: 40px;
   position: relative;
 }
 
 h1 {
   font-family: 'Bungee', cursive;
   color: #FF6F91;
-  font-size: 3em;
-  margin-bottom: 20px;
+  font-size: 5em;
+  margin-bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,12 +21,12 @@ h1 {
 h2 {
   font-family: 'Nunito', sans-serif;
   color: #FF6F91;
-  font-size: 2em;
+  font-size: 2.5em;
   margin-bottom: 20px;
 }
 
 .flowerIcon {
-  width: 60px;
+  width: 100px; 
   vertical-align: middle;
   margin-right: 10px;
   margin-left: 10px;
@@ -45,10 +45,11 @@ h2 {
   border: none;
   padding: 15px 30px;
   border-radius: 10px;
-  font-size: 1.2em;
+  font-size: 1.5em;
   cursor: pointer;
   transition: transform 0.3s;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 200px; 
 }
 
 .theme-button:hover, .feature-button:hover {
@@ -60,7 +61,7 @@ h2 {
 }
 
 .material-symbols-outlined {
-  font-size: 2em;
+  font-size: 2.5em;
   vertical-align: middle;
   margin-right: 8px;
 }
