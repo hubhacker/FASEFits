@@ -1,3 +1,5 @@
+/* themeChoice.css */
+
 body.kawaii-body {
   font-family: 'Nunito', sans-serif;
   color: #FF6F91;
@@ -87,7 +89,6 @@ h2 {
   margin-right: 8px;
 }
 
-
 .dropbtn {
   background-color: #FFB6C1;
   color: white;
@@ -112,12 +113,10 @@ h2 {
   transform: translateY(-50%);
 }
 
-
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
 
 .dropdown-content {
   display: none;
