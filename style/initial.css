@@ -1,45 +1,41 @@
-/* themeChoice.css */
-
 body.kawaii-body {
   font-family: 'Nunito', sans-serif;
   color: #FF6F91;
   text-align: center;
-  padding: 20px;
-  position: relative;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 0 5%; 
-}
-
-.left-column, .middle-text, .right-column {
-  flex: 1;
-  margin: 10px;
-}
-
-.left-column {
-  text-align: left;
-}
-
-.middle-text {
-  text-align: center;
-}
-
-.right-column {
-  text-align: right;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 h1 {
   font-family: 'Bungee', cursive;
   color: #FF6F91;
   font-size: 5em;
-  margin-bottom: 20px;
+  margin-bottom: 10px; 
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.middle-text {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -55,31 +51,31 @@ h2 {
   margin-left: 10px;
 }
 
-.theme-buttons {
+.buttons {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: 20px;
+  align-items: center;
 }
 
-.theme-button {
+.theme-button, .dropbtn {
   background-color: #FFB6C1;
   color: white;
   border: none;
-  padding: 10px 20px; 
+  padding: 20px 40px; 
   border: 2px solid black;
   border-radius: 10px;
-  font-size: 1em;
+  font-size: 1.5em; 
   cursor: pointer;
   transition: transform 0.3s;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.theme-button:hover {
+.theme-button:hover, .dropbtn:hover {
   transform: scale(1.1);
 }
 
-.theme-button:focus {
+.theme-button:focus, .dropbtn:focus {
   outline: none;
 }
 
@@ -87,21 +83,6 @@ h2 {
   font-size: 2em;
   vertical-align: middle;
   margin-right: 8px;
-}
-
-.dropbtn {
-  background-color: #FFB6C1;
-  color: white;
-  padding: 15px 30px;
-  font-size: 1.2em;
-  border: 2px solid black;
-  border-radius: 10px;
-  font-family: 'Nunito', sans-serif;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 0.3s;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  position: relative;
 }
 
 .dropbtn::after {
