@@ -10,6 +10,14 @@ var desc = document.querySelector('.desc');
 var clouds = document.querySelector('.clouds');
 var button = document.querySelector('.submit');
 
+
+//container variables
+var topsDiv = document.querySelector('.tops-content');
+var bottomsDiv = document.querySelector('.bottoms-content');
+var shoesDiv = document.querySelector('.shoes-content');
+var accessoryDiv = document.querySelector('.acc-content');
+
+
 // Get theme from the URL parameters?
 const urlParams = new URLSearchParams(window.location.search);
 const theme = urlParams.get('theme');
@@ -48,12 +56,14 @@ function fetchData() {
 
       tempValue = 1.8 * (tempValue - 273.15) + 32;
 
+      //putting the vaues into index.html
       main.innerHTML = nameValue;
       desc.innerHTML = "Description: " + descValue;
       temp.innerHTML = "Temperature (°F): " + parseInt(tempValue.toFixed(0)) + "°";
 
       input.value = "";
 
+      //decided which temps decide which fits
       tempValue = parseInt(tempValue.toFixed(0));
 
       if (tempValue <= 40){
@@ -77,9 +87,10 @@ function fetchData() {
 
 }
 
-//coldfits
+//coldfits; pushing images into and array and then sending the array to the html
 function coldfits() {
 
+  clearImages();
   var coldTop1 = new Image();
   coldTop1.src = "img/cold_top_1.png";
   var coldTop2 = new Image();
@@ -105,15 +116,15 @@ function coldfits() {
   accArray.push(coldAcc1, coldAcc2);
 
   // Append images to HTML
-  appendImages(topArray, document.querySelector('.tops'));
-  appendImages(bottomArray, document.querySelector('.bottoms'));
-  appendImages(shoesArray, document.querySelector('.shoes'));
-  appendImages(accArray, document.querySelector('.accessories'));
+  appendImages(topArray, topsDiv);
+  appendImages(bottomArray, bottomsDiv);
+  appendImages(shoesArray, shoesDiv);
+  appendImages(accArray, accessoryDiv);
 }
 
 //chillyfits
 function chillyfits() {
-  // clearImages();
+  clearImages();
   var chillyTop1 = new Image();
   chillyTop1.src = "img/chilly_top_1.png";
   var chillyTop2 = new Image();
@@ -139,15 +150,15 @@ function chillyfits() {
   accArray.push(chillyAcc1, chillyAcc2);
 
   // Append images to HTML
-  appendImages(topArray, document.querySelector('.tops'));
-  appendImages(bottomArray, document.querySelector('.bottoms'));
-  appendImages(shoesArray, document.querySelector('.shoes'));
-  appendImages(accArray, document.querySelector('.accessories'));
+  appendImages(topArray, topsDiv);
+  appendImages(bottomArray, bottomsDiv);
+  appendImages(shoesArray, shoesDiv);
+  appendImages(accArray, accessoryDiv);
 }
 
 //warmfits
 function warmfits() {
-  // clearImages();
+  clearImages();
   var warmTop1 = new Image();
   warmTop1.src = "img/warm_top_1.png";
   var warmTop2 = new Image();
@@ -173,19 +184,21 @@ function warmfits() {
   accArray.push(warmAcc1, warmAcc2);
 
   // Append images to HTML
-  appendImages(topArray, document.querySelector('.tops'));
-  appendImages(bottomArray, document.querySelector('.bottoms'));
-  appendImages(shoesArray, document.querySelector('.shoes'));
-  appendImages(accArray, document.querySelector('.accessories'));
+  appendImages(topArray, topsDiv);
+  appendImages(bottomArray, bottomsDiv);
+  appendImages(shoesArray, shoesDiv);
+  appendImages(accArray, accessoryDiv);
 }
 
 // hotfits
 function hotfits() {
+  clearImages();
   var hotTop1 = new Image();
   hotTop1.src = "img/hot_top_1.png";
   var hotTop2 = new Image();
   hotTop2.src = "img/hot_top_2.png";
   topArray.push(hotTop1, hotTop2);
+
 
   var hotBottom1 = new Image();
   hotBottom1.src = "img/hot_bottom_1.png";
@@ -206,10 +219,10 @@ function hotfits() {
   accArray.push(hotAcc1, hotAcc2);
 
   // Append images to HTML
-  appendImages(topArray, document.querySelector('.tops'));
-  appendImages(bottomArray, document.querySelector('.bottoms'));
-  appendImages(shoesArray, document.querySelector('.shoes'));
-  appendImages(accArray, document.querySelector('.accessories'));
+  appendImages(topArray, topsDiv);
+  appendImages(bottomArray, bottomsDiv);
+  appendImages(shoesArray, shoesDiv);
+  appendImages(accArray, accessoryDiv);
 }
 
 // Function to append images to HTML
@@ -219,21 +232,22 @@ function appendImages(imagesArray, container) {
   });
 }
 
+  //clears the outfits for hte next search; sets html grid divs to empty and the arrays to empty
  function clearImages() {
-   document.querySelector('.tops-content').innerHTML = '';
-   document.querySelector('.bottoms-content').innerHTML = '';
-   document.querySelector('.shoes-content').innerHTML = '';
-   document.querySelector('.acc-content').innerHTML = '';
+   topsDiv.innerHTML = '';
+   bottomsDiv.innerHTML = '';
+   shoesDiv.innerHTML = '';
+   accessoryDiv.innerHTML = '';
+
+   topArray = [];
+   bottomArray = [];
+   shoesArray = [];
+   accArray = [];
 }
 
-// Function to update HTML content with array values
-function updateHTMLContent() {
-  document.querySelector('.tops-content').textContent = topArray.join(', ');
-  document.querySelector('.bottoms-content').textContent = bottomArray.join(', ');
-  document.querySelector('.shoes-content').textContent = shoesArray.join(', ');
-  document.querySelector('.acc-content').textContent = accArray.join(', ');
+//gets a random int, gonna be used to randomize outfits. 
+function getRandomInt(min, max) {
+  const minCeiled = Math.ceil(min);
+  const maxFloored = Math.floor(max);
+  return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
 }
-
-// Call the function to update HTML content
-//clearImages();
-updateHTMLContent();
