@@ -89,6 +89,7 @@ function fetchData() {
 
 //coldfits; pushing images into and array and then sending the array to the html
 function coldfits() {
+  
 
   clearImages();
   var coldTop1 = new Image();
