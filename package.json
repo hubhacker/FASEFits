@@ -1,0 +1,18 @@
+{
+  "name": "fasefits",
+  "version": "1.0.0",
+  "description": "FASE Fits is an outfit generator that uses data from a weather API to recommend clothing based on weather conditions of any selected location and personal user preferences. The website aims to simplify the process of choosing weather-appropriate outfits while maintaining a stylish appearance.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "mysql2": "^3.10.0"
+  }
+}
