@@ -8,6 +8,7 @@
 }
 
 body {
+  background-color: #fdd5db;
   text-align: center;
   position: relative; 
   z-index: 1; 
@@ -53,7 +54,7 @@ h3 {
 
 body {
   font-family: "Nunito", sans-serif;
-  background: #44576D;
+  background: #fdd5db;
 }
 
 .input {
