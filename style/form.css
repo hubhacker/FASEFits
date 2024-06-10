@@ -31,3 +31,20 @@ h2 {
     display: inline-block;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   }
+
+  button[type="submit"] {
+    background-color: #FF6F91;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  
+  button[type="submit"]:hover {
+    transform: scale(1.1);
+  }
