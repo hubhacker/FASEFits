@@ -34,7 +34,9 @@ app.post('/login', (req, res) => {
     db.execute(login, [req.body.username, req.body.password], (err, result) => {
         if (users[username] && users[username] === password) {
             req.session.user = username;
-            res.json({ success: true });
+            // res.json({ success: true });
+            res.sendFile(__dirname + '/views/form.html');
+            
         } else {
             res.json({ success: false, message: 'Invalid username or password' });
         }
@@ -57,7 +59,8 @@ app.post('/signup', (req, res) => {
         } else {
             users[username] = password;
             req.session.user = username;
-            res.json({ success: true });
+            // res.json({ success: true });
+            res.sendFile(__dirname + '/views/auth.html');
         }
     })  
 });
