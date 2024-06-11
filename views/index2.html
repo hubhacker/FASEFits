@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Weather App</title>
+   <link rel="stylesheet" href="../style/searchbar.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>  
+
+  <h1><img src="../img/indexFlower.png" alt="Flower Icon" class="flowerIcon"> FASE FITS <img src="../img/indexFlower.png" alt="Flower Icon" class="flowerIcon"></h1>
+   
+  <h2>Enter your location:</h2>
+    
+  <video autoplay muted loop id="myVideo">
+      <source src="indexBackground.mp4" type="video/mp4">
+  </video>
+          
+  <div class="input">
+      <input type="text" placeholder="Search Location..." class="input_text">
+      <input type="submit" value="Enter" class="submit">
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Menu</button>
+    <div class="dropdown-content">
+      <a href="initial.html">Go to Homepage</a>
+      <a href="form.html">Pick A Different Aesthetic</a>
+    </div>
+  </div>
+           
+  <div class="container">
+      <div class="card">
+         <h3 class="name" id="name"></h3>
+         <p class="temp"></p>
+         <p class="clouds"></p>
+         <p class="desc"></p>
+      </div>
+  </div>
+
+  <div class="rec">Recommended Pieces:</div>
+
+  <!--tops-->
+  <div class="tops">
+      <div>Tops</div>
+      <div class="tops-content"></div>          
+  </div>
+
+  <!--bottoms-->
+  <div class="bottoms">
+      <div>Bottoms</div>
+      <p class="bottoms-content"></p>  
+  </div>
+
+  <!--shoes-->
+  <div class="shoes">
+      <div>Shoes</div>
+      <p class="shoes-content"></p>
+  </div>
+
+  <!--Accessories-->
+  <div class="accessories">
+      <div>Accessories</div>
+      <p class="acc-content"></p>
+  </div>
+
+  <script src="../style/scripts/script2.js"></script>
+  <script src="sounds/homeAudio.js"></script>
+</body>
+</html>
