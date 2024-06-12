@@ -73,6 +73,15 @@ app.get('/', (req, res) => {
     }
 });
 
+app.get('/streetwear', (req, res) => {
+    res.sendFile(__dirname+'/views/index2.html');
+});
+
+app.get('/coquette', (req, res) => {
+    res.sendFile(__dirname+'/views/index.html');
+});
+
+
 app.use(express.static('style'));
 
 app.listen(port, () => {
