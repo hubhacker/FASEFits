@@ -1,4 +1,5 @@
 body.kawaii-body {
+  background-image: url(strawberrybackground.jpeg);
   font-family: 'Nunito', sans-serif;
   color: #FF6F91;
   text-align: center;
@@ -131,4 +132,17 @@ h2 {
 
 .dropdown:hover .dropbtn {
   background-color: #FF6F91;
+}
+
+.container {
+  background-color: #ffabbd88;
+  border-radius: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Nunito', sans-serif;
+  color: #FF6F91;
+  text-align: center;
+  padding-left: 25px;
+  padding: 50px;
+  position: relative;
 }

@@ -1,60 +1,75 @@
 body {
-    background-color: #fdd5db;
+  /* background-color: #fdd5db;
     background-size: cover;
-    background-repeat: no-repeat;
-    font-family: 'Bungee';
-    color: #FF6F91;
-    text-align: center;
-    padding: 40px;
-    position: relative;
-  }
+    background-repeat: no-repeat; */
+  background-image: url(strawberrybackground.jpeg);
+  background-size: cover;
+  font-family: 'Bungee';
+  color: #FF6F91;
+  text-align: center;
+  padding: 40px;
+  position: relative;
+}
 
 h1 {
-    font-display: 'Bungee';
-    color: #FF6F91;
-    font-size: 5em;
-    margin-bottom: 40px;
-    background-color: #fdeef0;
-  }
-  
-h2 {
-    font-family: 'bungee';
-    color: #FF6F91;
-    font-size: 2.5em;
-    margin-bottom: 20px;
+  font-family: "Bungee";
+  color: #c1566f;
+  font-size: 5em;
+  margin-bottom: 40px;
 }
-  
+
+h2 {
+  font-family: 'bungee';
+  color: #FF6F91;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
 .auth-container {
-    background-color: #ff6f91ba;
-    padding: 40px;
-    border-radius: 15px;
-    display: inline-block;
-    box-shadow: 0 10px 20px rgb(234, 101, 101);
-  }
+  background-color: #ff6f91ba;
+  padding: 40px;
+  border-radius: 15px;
+  display: inline-block;
+  box-shadow: 0 10px 20px rgb(234, 101, 101);
+}
 
-  
 
-  .submit {
-    background-color: #f2c1cc;
-    color: rgb(239, 1, 1);
-    border: none;
-    padding: 15px 30px;
-    border-radius: 10px;
-    font-size: 1.5em;
-    cursor: pointer;
-    transition: transform 0.3s;
-    box-shadow: 0 5px 15px rgb(223, 66, 98);
-    width: 100%;
-  }
-  
-  .submit:hover {
-    transform: scale(1.1);
-  }
 
-  button {
-    font-family: 'Bungee';
+
+.submit {
+  background-color: #f2c1cc;
+  color: rgb(239, 1, 1);
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: transform 0.3s;
+  box-shadow: 0 5px 15px rgb(223, 66, 98);
+  width: 100%;
+}
+
+.submit:hover {
+  transform: scale(1.1);
+}
+
+button {
+  font-family: 'Bungee';
+  color: #FF6F91;
+  font-size: 5em;
+  margin-bottom: 20px;
+  font-style: normal;
+}
+
+.container {
+    background-color: #ffabbd88;
+    border-radius: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Nunito', sans-serif;
     color: #FF6F91;
-    font-size: 5em;
-    margin-bottom: 20px;
-    font-style: normal;
-  }
+    text-align: center;
+    padding-left: 25px;
+    padding: 50px;
+    position: relative;
+}
