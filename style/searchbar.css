@@ -37,9 +37,9 @@ h2 {
 
 h3 {
   margin-top: 20px;
-  color: white;
+  color: rgb(254, 108, 137);
   font-size: 80px;
-  font-family: "Cinzel", serif;
+  font-family: "bungee";
   font-optical-sizing: auto;
 }
 
@@ -115,8 +115,8 @@ input[type="submit"] {
   margin: 40px 0;
   font-size: 30px;
   font-weight: bold;
-  font-family: "Nunito", sans-serif;
-  color: #29353C;
+  font-family: "nunito", sans-serif;
+  color: rgb(254, 108, 137);;
 }
 
 .arrow {
@@ -138,41 +138,41 @@ input[type="submit"] {
 
 .tops {
   margin-top: 20px;
-  color: white;
+  color: rgb(254, 108, 137);
   font-size: 80px;
-  font-family: "Nunito", serif;
+  font-family: "bungee";
   font-optical-sizing: auto;
 }
 
 .bottoms {
   margin-top: 20px;
-  color: white;
+  color: rgb(254, 108, 137);
   font-size: 80px;
-  font-family: "Nunito", serif;
+  font-family: "bungee";
   font-optical-sizing: auto;
 }
 
 .shoes {
   margin-top: 20px;
-  color: white;
+  color: rgb(254, 108, 137);
   font-size: 80px;
-  font-family: "Nunito", serif;
+  font-family: "bungee";
   font-optical-sizing: auto;
 }
 
 .accessories {
   margin-top: 20px;
-  color: white;
+  color: rgb(254, 108, 137);
   font-size: 80px;
-  font-family: "Nunito", serif;
+  font-family: "bungee";
   font-optical-sizing: auto;
 }
 
 .rec {
   margin-top: 20px;
-  color: white;
+  color: rgb(254, 108, 137);
   font-size: 80px;
-  font-family: "Cinzel", serif;
+  font-family: "bungee";
   font-optical-sizing: auto;
 }
 
