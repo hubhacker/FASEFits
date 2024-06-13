@@ -89,6 +89,10 @@ app.get('/form', (req, res) => {
     res.sendFile(__dirname+'/views/form.html');
 });
 
+app.get('/authfile', (req, res) => {
+    res.sendFile(__dirname+'/views/auth.html');
+});
+
 
 app.use(express.static('style'));
 
