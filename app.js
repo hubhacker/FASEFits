@@ -81,6 +81,14 @@ app.get('/coquette', (req, res) => {
     res.sendFile(__dirname+'/views/index.html');
 });
 
+app.get('/initial', (req, res) => {
+    res.sendFile(__dirname+'/views/initial.html');
+});
+
+app.get('/form', (req, res) => {
+    res.sendFile(__dirname+'/views/form.html');
+});
+
 
 app.use(express.static('style'));
 
