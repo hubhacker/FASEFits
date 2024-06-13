@@ -41,8 +41,15 @@ h1 {
 
 h2 {
   font-family: 'Nunito', sans-serif;
-  color: #FF6F91;
-  font-size: 2em;
+  color: #983b5a;
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: 'Nunito', sans-serif;
+  color: #d25881;
+  font-size: 1.5em;
   margin-bottom: 20px;
 }
 
@@ -135,14 +142,16 @@ h2 {
 }
 
 .container {
-  background-color: #ffabbd88;
-  border-radius: 50px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-family: 'Nunito', sans-serif;
-  color: #FF6F91;
-  text-align: center;
-  padding-left: 25px;
-  padding: 50px;
-  position: relative;
+    background-color: #ffabbd88;
+    border-radius: 100px;
+    background-size: 50%;
+    height: 575px;
+    width: 800px;
+    background-repeat: no-repeat;
+    font-family: 'Nunito', sans-serif;
+    color: #FF6F91;
+    text-align: center;
+    padding-left: 25px;
+    padding: 50px;
+    position: relative;
 }
