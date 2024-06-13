@@ -10,7 +10,7 @@ body {
   }
 
 h1 {
-    font-family: 'Bungee', cursive;
+    font-family: 'Cinzel';
     color: #FF6F91;
     font-size: 5em;
     margin-bottom: 40px;
@@ -25,34 +25,36 @@ h2 {
 }
   
 .auth-container {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #ff6f91ba;
     padding: 40px;
     border-radius: 15px;
     display: inline-block;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgb(234, 101, 101);
   }
 
-  button[type="submit"] {
-    background-color: #FF6F91;
-    color: white;
+  
+
+  .submit {
+    background-color: #f2c1cc;
+    color: rgb(239, 1, 1);
     border: none;
     padding: 15px 30px;
     border-radius: 10px;
     font-size: 1.5em;
     cursor: pointer;
     transition: transform 0.3s;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgb(223, 66, 98);
     width: 100%;
   }
   
-  button[type="submit"]:hover {
+  .submit:hover {
     transform: scale(1.1);
   }
 
   button {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Bungee';
     color: #FF6F91;
-    font-size: 2.5em;
+    font-size: 5em;
     margin-bottom: 20px;
     font-style: normal;
   }
