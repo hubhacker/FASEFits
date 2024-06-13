@@ -30,7 +30,7 @@ h1 {
 
 h2 {
   font-family: 'Bungee', sans-serif;
-  color: #ffebf1;
+  color: #FF6F91;
   font-size: 2.5em;
   margin-bottom: 20px;
 }
@@ -59,10 +59,11 @@ body {
   margin: 50px auto 20px;
 }
 
+/* this is the enter button in index.htlm */
 input[type="submit"] {
   padding: 15px 30px;
-  color: #29353C;
-  background: #AAC7D8;
+  color: #fdd5db;
+  background: #FF6F91;
   border: none;
   border-radius: 50px;
   font-family: "Nunito", sans-serif;
@@ -70,6 +71,7 @@ input[type="submit"] {
   font-size: 20px;
 }
 
+/* enter location input */
 .input input[type="text"] {
   width: 600px;
   height: 55px;
@@ -84,12 +86,12 @@ input[type="submit"] {
 }
 
 .input_text::placeholder {
-  color: #fdd5db;
+  color: #fdc6ce;
 }
 
 .card {
   width: 50%;
-  background: #AAC7D8;
+  background: #ffffff;
   height: 40vh;
   margin: 30px auto;
   margin-top: 10px;
